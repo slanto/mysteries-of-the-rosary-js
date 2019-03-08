@@ -1,0 +1,21 @@
+{
+  "name": "mysteries-of-the-rosary-js",
+  "version": "1.0.0",
+  "description": "Mysteries of the Rosary",
+  "main": "mysteries-of-the-rosary.js",
+  "scripts": { "test": "jasmine" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slanto/mysteries-of-the-rosary-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slanto/mysteries-of-the-rosary-js/issues"
+  },
+  "homepage": "https://github.com/slanto/mysteries-of-the-rosary-js#readme",
+  "devDependencies": {
+    "jasmine": "^3.3.1"
+  }
+}
