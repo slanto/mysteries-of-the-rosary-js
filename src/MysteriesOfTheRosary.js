@@ -12,16 +12,11 @@ class MysteriesOfTheRosary {
   }
   
   getCurrentMystery() {
+    var moment = require('moment');
     var indexOfInitialMystery = this.mysteries.indexOf(this.initialMystery);
-    var diffMonths =  this._diffMonths(this.currentDate,this.initialDate);
-    return this.mysteries[indexOfInitialMystery + diffMonths];
+    var months = moment(this.currentDate).diff(moment(this.initialDate), 'months');
+    return this.mysteries[indexOfInitialMystery + months];
   };
-
-  _diffMonths(dt2, dt1) {
-    var diff =(dt2.getTime() - dt1.getTime()) / 1000;
-    diff /= (60 * 60 * 24 * 7 * 4);
-    return Math.abs(Math.round(diff));
- }
 }
 
 module.exports = MysteriesOfTheRosary;
